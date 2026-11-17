@@ -1,0 +1,6 @@
+build/
+*.elf
+*.self
+*.pkg
+gen/takion.pb
+__pycache__/

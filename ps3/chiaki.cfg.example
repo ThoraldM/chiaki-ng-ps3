@@ -1,0 +1,28 @@
+# Chiaki PS3 configuration.
+# Copy to /dev_hdd0/game/CHIAKIPS3/USRDIR/chiaki.cfg (FTP), or to the top folder of a USB stick and
+# choose Settings > Import chiaki.cfg from USB.
+# You can also start without this file: consoles can be added and registered from the menu.
+# The app rewrites this file when you change settings in the menu.
+
+resolution=720
+fps=60
+# 0 = automatic
+bitrate=0
+dump_stream=0
+verbose_log=0
+
+# PSN account id (base64): only needed to register consoles from the PS3 with a PIN.
+# You can also type it in the app (Settings > PSN account ID); tools/export_keys.py copies it
+# from a chiaki-ng settings export.
+#psn_account_id=AAAAAAAAAAA=
+
+# One [host] section per console.
+[host]
+name=PS4
+# IP address; leave empty to find the console on the network by host_id
+host=192.168.1.50
+# MAC address in hex (optional)
+#host_id=0123456789AB
+# Registration keys (from chiaki-ng via tools/export_keys.py, or added by registering in the menu)
+#regist_key=00000000000000000000000000000000
+#rp_key=00000000000000000000000000000000
